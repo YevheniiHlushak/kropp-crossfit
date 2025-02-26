@@ -7,6 +7,7 @@
 
 .header__logo {
   padding-block: 32px;
+  flex-shrink: 0;
 }
 
 .menu__list {
@@ -52,6 +53,8 @@
   padding: 7px 26px;
   font-size: 12px;
   font-weight: 700;
+  white-space: nowrap;
+  text-transform: uppercase;
   line-height: calc(24 / 12);
   letter-spacing: 1.2px;
   background-color: var(--color-light);
@@ -68,17 +71,31 @@
 
 .header__burger-btn {
   display: flex;
-  align-items: center;
+
+  flex-direction: column;
+  row-gap: 4px;
   justify-content: center;
+  padding-inline: 9px;
   width: 40px;
   height: 40px;
+  color: var(--color-light);
   background-color: transparent;
   border: var(--border);
   border-radius: 50%;
-  transition-property: stroke;
 
-  &:hover,
-  &:focus {
-    stroke: var(--color-light-gray);
+  &:hover {
+    color: var(--color-light-gray);
+    border-color: var(--color-light-gray);
+  }
+}
+
+.burger-btn__line {
+  width: 6px;
+  height: 1px;
+  background-color: currentColor;
+  box-shadow: 15px 0px 0px 0px currentColor;
+
+  &:hover {
+    background-color: var(--color-light-gray);
   }
 }

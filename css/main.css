@@ -188,6 +188,8 @@ a:hover {
 
 .header__logo {
   padding-block: 32px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .menu__list {
@@ -251,6 +253,8 @@ a:hover {
   padding: 7px 26px;
   font-size: 12px;
   font-weight: 700;
+  white-space: nowrap;
+  text-transform: uppercase;
   line-height: 2;
   letter-spacing: 1.2px;
   background-color: var(--color-light);
@@ -268,20 +272,34 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 4px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-inline: 9px;
   width: 40px;
   height: 40px;
+  color: var(--color-light);
   background-color: transparent;
   border: var(--border);
   border-radius: 50%;
-  -webkit-transition-property: stroke;
-  transition-property: stroke;
 }
-.header__burger-btn:hover, .header__burger-btn:focus {
-  stroke: var(--color-light-gray);
+.header__burger-btn:hover {
+  color: var(--color-light-gray);
+  border-color: var(--color-light-gray);
+}
+
+.burger-btn__line {
+  width: 6px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-box-shadow: 15px 0px 0px 0px currentColor;
+          box-shadow: 15px 0px 0px 0px currentColor;
+}
+.burger-btn__line:hover {
+  background-color: var(--color-light-gray);
 }/*# sourceMappingURL=main.css.map */
