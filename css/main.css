@@ -27,17 +27,12 @@ body,
   Убираем внешние отступы вертикали нужным тегам,
   у которых есть атрибут class
  */
-:where(h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-dl):where([class]) {
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
   margin-block: 0;
+}
+
+:where(a):where([class]) {
+  text-decoration: none;
 }
 
 :where(dd[class]) {
@@ -109,16 +104,41 @@ body {
     scroll-behavior: auto !important;
   }
 }
+body {
+  background-color: var(--color-dark);
+  font-family: var(--font-family-base);
+  color: var(--color-light-gray);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  -webkit-transition-duration: var(--transition-duration);
+          transition-duration: var(--transition-duration);
+}
+
+a:hover {
+  color: var(--color-light-gray);
+}
+
 :root {
   --color-light: #ffffff;
   --color-dark: #000000;
   --color-light-gray: #c4c4c4;
   --color-dark-gray: #707070;
+  --border: 1px solid var(--color-light);
   --border-radius: 30px;
   --btn-height: 54px;
-  --btn-padding-block: 14px;
-  --btn-padding-inline: 31px 27px;
+  --btn-padding-y: 14px;
+  --btn-padding-x: 31px 27px;
   --input-padding: 15px 24px;
+  --font-family-base: "Heebo", sans-serif;
+  --font-family-accent: "Yantramanav", sans-serif;
+  --containet-width: 1300px;
+  --container-padding-x: 15px;
+  --transition-duration: 200ms;
 }
 
 @font-face {
@@ -142,7 +162,129 @@ body {
   font-style: normal;
   font-display: swap;
 }
-.heading {
-  font-family: "Heebo";
+.container {
+  max-width: calc(var(--containet-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}
+
+.title {
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header__container {
+  padding-inline: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  padding-block: 32px;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 62px;
+     -moz-column-gap: 62px;
+          column-gap: 62px;
+}
+
+.menu__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 7px;
+     -moz-column-gap: 7px;
+          column-gap: 7px;
+  padding-block: 37px;
+  color: var(--color-light);
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+}
+.menu__link.current::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.header__btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 39px;
+     -moz-column-gap: 39px;
+          column-gap: 39px;
+}
+
+.header__contact-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 124px;
+  height: 38px;
+  padding: 7px 26px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1.2px;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  border: none;
+  border-radius: var(--border-radius);
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+}
+.header__contact-btn:hover, .header__contact-btn:focus {
+  background-color: var(--color-light-gray);
+}
+
+.header__burger-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: var(--border);
+  border-radius: 50%;
+  -webkit-transition-property: stroke;
+  transition-property: stroke;
+}
+.header__burger-btn:hover, .header__burger-btn:focus {
+  stroke: var(--color-light-gray);
 }/*# sourceMappingURL=main.css.map */
