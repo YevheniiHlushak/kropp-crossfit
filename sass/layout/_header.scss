@@ -16,16 +16,19 @@
 }
 
 .menu__link {
-  display: inline-flex;
-  align-items: center;
-  column-gap: 7px;
+  position: relative;
   padding-block: 37px;
   color: var(--color-light);
   font-size: 12px;
   line-height: calc(18 / 12);
   letter-spacing: 1.2px;
   font-weight: 700;
+
   &.current::after {
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
     content: "";
     width: 5px;
     height: 5px;
@@ -53,9 +56,9 @@
   letter-spacing: 1.2px;
   background-color: var(--color-light);
   color: var(--color-dark);
-  border:none;
+  border: none;
   border-radius: var(--border-radius);
-   transition-property: background-color;
+  transition-property: background-color;
 
   &:hover,
   &:focus {
@@ -73,7 +76,6 @@
   border: var(--border);
   border-radius: 50%;
   transition-property: stroke;
-
 
   &:hover,
   &:focus {

@@ -203,15 +203,7 @@ a:hover {
 }
 
 .menu__link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 7px;
-     -moz-column-gap: 7px;
-          column-gap: 7px;
+  position: relative;
   padding-block: 37px;
   color: var(--color-light);
   font-size: 12px;
@@ -220,6 +212,11 @@ a:hover {
   font-weight: 700;
 }
 .menu__link.current::after {
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   content: "";
   width: 5px;
   height: 5px;
