@@ -7,26 +7,58 @@
     <title>Kropp Crossfit</title>
   </head>
   <body>
-    <header class="header ">
+    <header class="header">
       <div class="header__container">
-        <a class="logo header__logo" href="http:/"><img src="./images/header-logo-kropp.png" alt="Kropp Logo"  width="135" height="25"/></a>
-        <nav class="menu">
+        <a class="logo header__logo" href="http:/"
+          ><img
+            src="./images/header-logo-kropp.png"
+            alt="Kropp Logo"
+            width="135"
+            height="25"
+        /></a>
+        <nav class="header__menu">
           <ul class="menu__list">
-            <li class="menu__item"><a href="/" class="menu__link current">Home</a></li>
+            <li class="menu__item">
+              <a href="/" class="menu__link current">Home</a>
+            </li>
             <li class="menu__item"><a href="/" class="menu__link">Pages</a></li>
-            <li class="menu__item"><a href="/" class="menu__link">Portfolio</a></li>
+            <li class="menu__item">
+              <a href="/" class="menu__link">Portfolio</a>
+            </li>
             <li class="menu__item"><a href="/" class="menu__link">Blog</a></li>
             <li class="menu__item"><a href="/" class="menu__link">Shop</a></li>
           </ul>
         </nav>
         <div class="header__btn-container">
           <button class="header__contact-btn">Book now</button>
-          <button class="header__burger-btn">
-          <span class="burger-btn__line"></span>
-          <span class="burger-btn__line"></span>
-          <span class="burger-btn__line"></span>
+          <button class="header__burger-btn" title="Open menu">
+            <span class="visually-hidden">Open menu</span>
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
           </button>
-        </div></div>
+        </div>
+      </div>
+      <main>
+        <h1 class="visually-hidden">Kropp Fitness Club</h1>
+        <section class="section hero">
+          <h2 class="visually-hidden">Upcoming events</h2>
+          <div class="hero__body">
+            <div class="hero__info">
+              New event<br />
+              coming up / <time datetime="06-07">june 7</time>&nbsp;-&nbsp;<time datetime="06-13">13</time>
+            </div>
+            <h3 class="hero__title">crossfit</h3>
+            <div class="hero__pagination">
+              <ul class="hero__pagination-list">
+                <li class="hero__pagination-item"><button class="hero__pagination-btn" type="button"></button></li>
+                <li class="hero__pagination-item"><button class="hero__pagination-btn" type="button"></button></li>
+                <li class="hero__pagination-item"><button class="hero__pagination-btn is-active" type="button"></button></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
     </header>
   </body>
 </html>
