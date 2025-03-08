@@ -1,5 +1,18 @@
 .container {
-  max-width: calc(var(--containet-width) + var(--container-padding-x) * 2);
+  width: 1300px;
   margin-inline: auto;
-  padding-inline: var(--container-padding-x);
+  padding-inline: 32px;
+
+
+  @media screen  and (max-width: 1439px) {
+    width: 100%;
+  }
+  
+
+  @media screen  and (max-width: 767px) {
+    
+    padding-inline: 32px;
+  }
+
+  
 }

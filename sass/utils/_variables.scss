@@ -1,6 +1,8 @@
 :root {
   --color-light: #ffffff;
   --color-dark: #000000;
+  --color-dark-alternate: #131619;
+
   --color-light-gray: #c4c4c4;
   --color-dark-gray: #707070;
 
@@ -14,7 +16,5 @@
 
   --font-family-base: "Heebo", sans-serif;
   --font-family-accent: "Yantramanav", sans-serif;
-  --containet-width: 1300px;
-  --container-padding-x: 15px;
   --transition-duration: 200ms;
 }

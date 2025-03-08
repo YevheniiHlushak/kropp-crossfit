@@ -1,0 +1,40 @@
+.btn {
+  position: relative;
+  display: block;
+  height: var(--btn-height);
+  padding: 14px 81px 14px 31px;
+  width: 192px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: calc(26 / 13);
+  background-color: transparent;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  color: var(--color-light);
+  transition-duration: var(--transition-duration);
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1px;
+    height: 100%;
+    aspect-ratio: 1;
+    background: url("../icons/btn-arrow-up-right.svg") center no-repeat;
+    border: var(--border);
+    border-radius: 50%;
+    transition-duration: var(--transition-duration);
+
+  }
+
+  &:hover{
+    border-color: var(--color-light-gray);
+
+    &::after{
+      border-color: var(--color-light-gray);
+    }
+  }
+}
