@@ -71,6 +71,13 @@
   }
 }
 
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    padding: 30px 32px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .hero {
     padding: 20px 15px;
@@ -78,11 +85,5 @@
 
   .hero__title {
     margin-bottom: 20px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .hero {
-    padding: 30px 32px;
   }
 }

@@ -133,9 +133,9 @@
 }
 
 @media screen and (max-width: 767px) {
-  // .header__container{
-  //   padding-top: 10px;
-  // }
+   .header__container{
+     padding-inline: 15px;
+   }
   .header__logo {
     padding-block: 20px;
   }
