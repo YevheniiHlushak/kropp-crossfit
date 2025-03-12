@@ -64,6 +64,8 @@
     </header>
     <main>
       <h1 class="visually-hidden">Kropp Fitness Club</h1>
+      <!-- section hero -->
+
       <section class="section hero">
         <h2 class="visually-hidden">Upcoming events</h2>
         <div class="hero__body">
@@ -93,6 +95,7 @@
           </div>
         </div>
       </section>
+      <!-- section motivation -->
       <section class="motivation section">
         <h2 class="visually-hidden">Motivation</h2>
         <ul class="motivation__list">
@@ -100,7 +103,7 @@
             <div class="motivation__card container">
               <div class="motivation__body">
                 <h3
-                  class="motivation__title title-medium title-backdrop"
+                  class="motivation__title title--medium title-backdrop--medium"
                   data-title="strong"
                 >
                   Be you, just stronger!<br />Power is in you
@@ -127,7 +130,7 @@
             <div class="motivation__card container">
               <div class="motivation__body">
                 <h3
-                  class="motivation__title title-medium title-backdrop"
+                  class="motivation__title title--medium title-backdrop--medium"
                   data-title="start"
                 >
                   Today is the best<br />
@@ -153,40 +156,128 @@
           </li>
         </ul>
       </section>
+      <!-- section trainings -->
       <section class="section trainings">
         <h2 class="visually-hidden">Types of trainings</h2>
         <ul class="trainings__list">
           <li class="trainings__item">
             <a href="/" class="trainings__link"
-            ><img class="trainings__img" src="./images/trainings/1.svg" alt="" loading="lazy" width="151" height="142"/>Maxpump</a
+              ><img
+                class="trainings__img"
+                src="./images/trainings/1.svg"
+                alt=""
+                loading="lazy"
+                width="151"
+                height="142"
+              />Maxpump</a
             >
           </li>
           <li class="trainings__item">
             <a href="/" class="trainings__link"
-            ><img class="trainings__img" src="./images/trainings/2.svg" alt="" loading="lazy" width="151" height="142"/>aron gym</a
+              ><img
+                class="trainings__img"
+                src="./images/trainings/2.svg"
+                alt=""
+                loading="lazy"
+                width="151"
+                height="142"
+              />aron gym</a
             >
           </li>
           <li class="trainings__item">
             <a href="/" class="trainings__link"
-            ><img class="trainings__img" src="./images/trainings/3.svg" alt="" loading="lazy" width="151" height="142"/>fit & tone</a
+              ><img
+                class="trainings__img"
+                src="./images/trainings/3.svg"
+                alt=""
+                loading="lazy"
+                width="151"
+                height="142"
+              />fit & tone</a
             >
           </li>
           <li class="trainings__item">
             <a href="/" class="trainings__link"
-            ><img class="trainings__img" src="./images/trainings/4.svg" alt="" loading="lazy" width="151" height="142"/>forza</a
+              ><img
+                class="trainings__img"
+                src="./images/trainings/4.svg"
+                alt=""
+                loading="lazy"
+                width="151"
+                height="142"
+              />forza</a
             >
           </li>
           <li class="trainings__item">
             <a href="/" class="trainings__link"
-            ><img class="trainings__img" src="./images/trainings/5.svg" alt="" loading="lazy" width="151" height="142"/>balance fitness</a
+              ><img
+                class="trainings__img"
+                src="./images/trainings/5.svg"
+                alt=""
+                loading="lazy"
+                width="151"
+                height="142"
+              />balance fitness</a
             >
           </li>
           <li class="trainings__item">
             <a href="/" class="trainings__link"
-            ><img class="trainings__img" src="./images/trainings/6.svg" alt="" loading="lazy" width="151" height="142"/>body sculpt</a
+              ><img
+                class="trainings__img"
+                src="./images/trainings/6.svg"
+                alt=""
+                loading="lazy"
+                width="151"
+                height="142"
+              />body sculpt</a
             >
           </li>
         </ul>
+      </section>
+      <!-- section join-us -->
+      <section class="section join-us">
+        <div class="join-us__wrapper">
+          <video
+            class="join-us__video"
+            src=""
+            width="960"
+            height="600"
+            poster="./images/join-us/poster.jpg"
+          ></video>
+          <button class="join-us__btn-play" type="button">play</button>
+        </div>
+        <div class="join-us__body container">
+          <h2 class="join-us__title">join us</h2>
+          <form class="join-us__form" autocomplete="off">
+            <header class="form__header">
+              <h3 class="form__title title--big title-backdrop--big" data-title="Go!">
+                Start here
+              </h3>
+              <p class="form__description">
+                fill the form below to start your journey
+              </p>
+            </header>
+            <div class="form__body">
+              <label for="username" class="visually-hidden">name</label>
+              <input
+                id="username"
+                type="text"
+                class="form__input input"
+                name="name"
+                placeholder="Name"
+              />
+
+              <label for="useremail" class="visually-hidden">name</label>
+              <input
+                id="useremail"
+                type="email"
+                class="form__input input"
+                name="email"
+                placeholder="Email"
+              /><button class="form__btn btn" type="submit">subscribe</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
   </body>

@@ -1,0 +1,36 @@
+.title--medium {
+  margin-bottom: 15px;
+  font-size: clamp(20px, 2.1vw, 40px);
+  line-height: calc(52 / 40);
+
+}
+
+.title-backdrop--medium {
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -2px;
+    right: calc(100% + 8px);
+    width: clamp(18px, 1.35vw, 26px);
+    aspect-ratio: 1;
+    background: url("../icons/plus.svg") center/contain no-repeat;
+  }
+
+  &::after {
+    content: attr(data-title);
+    position: absolute;
+    z-index: -1;
+    top: -0.45em;
+    left: -0.7em;
+    font-family: var(--font-family-accent);
+    font-size: 2.8em;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 0.03vw var(--color-light-gray);
+  }
+}
+
