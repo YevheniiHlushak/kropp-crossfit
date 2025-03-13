@@ -1,0 +1,33 @@
+.title-backdrop {
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    display: block;
+    content: "";
+    top: -2px;
+    background: url("../icons/plus.svg") center/contain no-repeat;
+  }
+
+  &::after {
+    content: attr(data-title);
+    position: absolute;
+    align-self: center;
+    z-index: -1;
+    font-family: var(--font-family-accent);
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 0.03vw var(--color-light-gray);
+  }
+}
+
+.title-backdrop--left::after {
+  top: -0.45em;
+  left: -0.6em;
+}
+
+.title-backdrop--center::after {
+  top: -100%;
+  left: 52%;
+  translate: -50% 0;
+}

@@ -25,13 +25,6 @@
 
 .motivation__description {
   width: clamp(300px, 20.83vw, 400px);
-  font-size: clamp(12px, 0.83vw, 16px);
-  line-height: calc(28 / 16);
-
-  & p {
-    margin-bottom: 37px;
-    
-  }
 }
 
 @media screen and (max-width: 1919px) {

@@ -1,3 +1,7 @@
+.join-us{
+  background-color: var(--color-dark-alternate);
+}
+
 .join-us__wrapper {
   position: relative;
   display: flex;
@@ -53,7 +57,7 @@
 }
 
 .join-us__body {
-  background-color: var(--color-dark-alternate);
+
   padding-bottom: clamp(50px, 7.81vw, 150px);
   // padding-top: 95px;
 }
