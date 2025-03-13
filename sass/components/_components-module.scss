@@ -1,7 +1,9 @@
 @use "./button";
 @use "./container";
+@use "./container-wide";
 @use "./title-backdrop";
-@use "./title--medium";
-@use "./title--big";
-@use "./section-description";
+@use "./title";
+@use "./section-title";
+@use "./section-subtitle";
+@use "./description";
 @use "./input";

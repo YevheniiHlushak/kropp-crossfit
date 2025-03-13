@@ -18,4 +18,6 @@
   --font-family-base: "Heebo", sans-serif;
   --font-family-accent: "Yantramanav", sans-serif;
   --transition-duration: 200ms;
+  --section-padding-block: clamp(50px, 7.81vw, 150px);
+  --section-padding-inline: 15px;
 }
