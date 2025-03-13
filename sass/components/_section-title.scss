@@ -1,13 +1,15 @@
-.title--big {
+.section-title {
   display: flex;
   justify-content: center;
+  margin-bottom: 7px;
+
   font-size: clamp(24px, 3.13vw, 60px);
   line-height: calc(72 / 60);
 
   &.title-backdrop::before{
     align-self: start;
     margin-right: 7px;
-    width: clamp(26px, 1.77vw, 34px);
+    width: clamp(15px, 1.77vw, 34px);
     aspect-ratio: 1;
   }
   

@@ -57,6 +57,9 @@
   .motivation__item:nth-child(even) .motivation__card {
     flex-direction: column-reverse;
   }
+  .motivation__item:nth-child(even) .motivation__body {
+    padding-left: 35px;
+  }
 
   .motivation__img {
     max-width: 60%;

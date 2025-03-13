@@ -1,6 +1,6 @@
 .trainings {
   position: relative;
-  padding: 150px 75px 140px;
+  padding: var(--section-padding-block) 75px;
   background-color: var(--color-dark);
 }
 .trainings__list {
@@ -49,7 +49,7 @@
 
 @media screen and (max-width: 1439px) {
   .trainings {
-    padding: 110px 32px;
+    padding-inline: 32px;
   }
 
   .trainings__list {
@@ -69,10 +69,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .trainings {
-    padding: 60px 32px;
-  }
-  
   .trainings__list {
     grid-template-columns: repeat(3, 76px);
     grid-template-rows: repeat(2, 123px);
