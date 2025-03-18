@@ -260,18 +260,18 @@
               </p>
             </header>
             <div class="form__body">
-              <label for="username" class="visually-hidden">name</label>
+              <label for="subscreibername" class="visually-hidden">name</label>
               <input
-                id="username"
+                id="subscreibername"
                 type="text"
                 class="form__input input"
                 name="name"
                 placeholder="Name"
               />
 
-              <label for="useremail" class="visually-hidden">name</label>
+              <label for="subscreiberemail" class="visually-hidden">name</label>
               <input
-                id="useremail"
+                id="subscreiberemail"
                 type="email"
                 class="form__input input"
                 name="email"
@@ -384,18 +384,18 @@
           <div class="calculate__user-data">
             <header class="calculate__body">
               <h3
-              data-title="bmi"
-              class="title title-backdrop title-backdrop--left"
-            >
-              Input your BMI
-            </h3>
-            <div class="description calculate__description">
-              <p>
-                Duo graece ponderum ne, ei mel aliquando. Pro te tamquam
-                nonumes, nam no nemore epicurei
-              </p>
-            </div>
-          </header>
+                data-title="bmi"
+                class="title title-backdrop title-backdrop--left"
+              >
+                Input your BMI
+              </h3>
+              <div class="description calculate__description">
+                <p>
+                  Duo graece ponderum ne, ei mel aliquando. Pro te tamquam
+                  nonumes, nam no nemore epicurei
+                </p>
+              </div>
+            </header>
             <form class="calculate__form">
               <label for="height" class="visually-hidden">Height</label>
               <input
@@ -423,13 +423,23 @@
                 class="input calculate__input"
               />
               <label for="gender" class="visually-hidden">Gender</label>
-              <select name="gender" id="gender" class="input calculate__select" required>
+              <select
+                name="gender"
+                id="gender"
+                class="input calculate__select"
+                required
+              >
                 <option value="" disabled selected>Gender</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
               </select>
               <label for="activity-factor" class="visually-hidden"></label>
-              <select name="activity-factor" id="activity-factor" class="input calculate__select calculate__select--wide" required>
+              <select
+                name="activity-factor"
+                id="activity-factor"
+                class="input calculate__select calculate__select--wide"
+                required
+              >
                 <option value="" disabled selected>
                   Select an activity factor
                 </option>
@@ -479,5 +489,122 @@
         </div>
       </section>
     </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__main footer__container">
+        <header class="footer__heading">
+          <a class="logo footer__logo" href="/"
+            ><img
+              src="./images/header-logo-kropp.png"
+              alt="Kropp Logo"
+              width="270"
+              height="50"
+          /></a>
+          <p class="footer__description">
+            please feel free to send us an e-mail at
+            <a class="footer__link" href="mailto:kropp@qodeinteractive.com"
+              >kropp@qodeinteractive.com</a
+            >
+            For any additional inquiries
+          </p>
+        </header>
+        <div class="footer__body">
+          <!-- column 1 -->
+          <div class="footer__column column-1">
+            <h2 class="column__title">About</h2>
+            <p class="column__text">
+              Shape up your site with Kropp, a theme especially made for fitness
+              & gym websites.
+            </p>
+          </div>
+          <!-- column 2 -->
+          <div class="footer__column column-2">
+            <h2 class="column__title">Working hours</h2>
+            <p class="column__text">
+              Monday - Friday <br />
+              <time datetime="05:30/24:00">05:30 - 24:00</time>
+            </p>
+            <p class="column__text">
+              Weekdays <br />
+              <time datetime="00:00/24:00">00:00 - 24:00</time>
+            </p>
+          </div>
+          <!-- column 3 -->
+          <div class="footer__column column-3">
+            <h2 class="column__title">Location</h2>
+            <address class="column__address column__text">
+              68 Jay Street, Brooklyn,<br />NY 11201, United States
+            </address>
+            <ul class="column__contacts-list">
+              <li class="contacts__item">
+                <a
+                  href="mailto:kropp@qodeinteractive.com"
+                  class="contacts__link column__text"
+                  >kropp@qodeinteractive.com</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a href="tel:+17184076400" class="contacts__link column__text"
+                  >+ (1) 718 - 407 - 6400</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- column 4 -->
+          <div class="footer__column column-4">
+            <h2 class="column__title">start now</h2>
+            <div class="column__input-wrapper">
+              <label for="useremail" class="visually-hidden">name</label>
+              <input
+                id="useremail"
+                type="email"
+                class="column__input input"
+                name="email"
+                placeholder="Email"
+              />
+              <button class="column__btn" type="submit"></button>
+            </div>
+
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a href="/" class="socials__link"
+                  ><img src="./icons/socials-1.svg" alt="tik-tok"
+                /></a>
+              </li>
+              <li class="socials__item">
+                <a href="/" class="socials__link"
+                  ><img src="./icons/socials-2.svg" alt="youtube"
+                /></a>
+              </li>
+              <li class="socials__item">
+                <a href="/" class="socials__link"
+                  ><img src="./icons/socials-3.svg" alt="instagram"
+                /></a>
+              </li>
+              <li class="socials__item">
+                <a href="/" class="socials__link"
+                  ><img src="./icons/socials-4.svg" alt="facebook"
+                /></a>
+              </li>
+              <li class="socials__item">
+                <a href="/" class="socials__link"
+                  ><img src="./icons/socials-5.svg" alt="twitter"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__extra">
+        <div class="footer__container">
+          <p class="extra__description">
+            © 2022 qode interactive, all rights reserved
+            <a href="/" class="extra__link">privacy policy</a
+            ><a href="/" class="extra__link">contact us</a>
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
